@@ -76,7 +76,7 @@ The end result looks good for the project images, although it has difficulty gen
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
-The code for my perspective transform uses the OpenCV functions getPerspectiveTransform to prepare the transform and the function warpPerspective to apply it. It can be found in the line 80 of the second code cell in Jupyter Notebook.
+The code for my perspective transform uses the OpenCV functions getPerspectiveTransform to prepare the transform and the function warpPerspective to apply it. It can be found in the line 90 of the second code cell in Jupyter Notebook.
 
 
 ```python
@@ -103,14 +103,14 @@ I verified that my perspective transform was working as expected by drawing the 
 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 
-After this I applied the moving histogram approach described in Udacity's example. This starts at line 86. The method can be tuned with different starting points, number of boxes, etc.
+After this I applied the moving histogram approach described in Udacity's example. This starts at line 99. The method can be tuned with different starting points, number of boxes, etc.
 I fit a polinomial and draw it on the image using the polyfit function in numpy
 
 ![alt text][image5]
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
-The radius of curvature is calculated using the coefficients of the polinomial at the beginning of the curve. This happens in line 209
+The radius of curvature is calculated using the coefficients of the polinomial at the beginning of the curve. This happens in line 223
 
 #### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
 
@@ -128,7 +128,7 @@ The resulting image:
 
 Watch the result video here:
 
-[![alt text][image10]](https://www.youtube.com/watch?v=2zLzhUYHkxk)
+[![alt text][image10]](https://youtu.be/5SMBAs14ZUU)
 
 ---
 
